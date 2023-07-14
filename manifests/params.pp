@@ -10,7 +10,7 @@ class sysctl::params {
     $symlink99 = false
   }
 
-  case $::osfamily {
+  case $facts['os']['family'] {
     'FreeBSD': {
       $sysctl_dir = false
     }
